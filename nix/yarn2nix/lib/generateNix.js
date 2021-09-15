@@ -49,6 +49,7 @@ function fetchgit(fileName, url, rev, branch, builtinFetchGit) {
           url = "${url}";
           ref = "${branch}";
           rev = "${rev}";
+          allRefs = true;
         };
       ` : `
         repo = fetchgit {
